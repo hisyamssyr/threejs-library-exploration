@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Eksplorasi Three.js — Bundaran ITS</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="index-page">
+    <main class="index-wrap">
+      <header class="index-header">
+        <p class="index-kicker">Tugas Grafika Komputer · Semester 5</p>
+        <h1>Eksplorasi Library Three.js<br />untuk Bundaran ITS</h1>
+        <p class="subtitle">
+          Sembilan demo kecil untuk menguji setiap library kandidat sebelum membangun model 3D
+          Bundaran ITS yang bisa dijelajahi. Setiap halaman berdiri sendiri dan sudah memuat
+          judul demo, petunjuk kontrol, serta objek uji.
+        </p>
+        <div class="identity">
+          <span>Penyusun: <strong>Hisyam Syafa Raditya — 5025241130</strong></span>
+          <span>Mata kuliah: <strong>Grafika Komputer</strong></span>
+          <span>Tanggal: <strong>18 November 2026</strong></span>
+        </div>
+      </header>
+
+      <ul class="demo-grid">
+        <li>
+          <a class="demo-card" href="./01-threejs-dasar.html">
+            <span class="num">01</span>
+            <h2>three.js Dasar</h2>
+            <p>Scene, kamera perspektif, renderer, mesh berputar, lantai, dan cahaya dasar.</p>
+            <span class="lib">three</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./02-pointerlock.html">
+            <span class="num">02</span>
+            <h2>Jalan First-Person</h2>
+            <p>Kunci kursor lalu berjalan mengelilingi lapangan dengan W/A/S/D dan Shift.</p>
+            <span class="lib">PointerLockControls</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./03-orbit.html">
+            <span class="num">03</span>
+            <h2>Melihat dari Luar</h2>
+            <p>Putar, geser, dan zoom model bundaran sederhana tanpa menembus lantai.</p>
+            <span class="lib">OrbitControls</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./04-gltf-loader.html">
+            <span class="num">04</span>
+            <h2>Memuat Model .glb</h2>
+            <p>Memuat model tugu contoh, memusatkan dan menyesuaikan skala, serta info mesh.</p>
+            <span class="lib">GLTFLoader + DRACOLoader</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./05-sky.html">
+            <span class="num">05</span>
+            <h2>Langit Prosedural</h2>
+            <p>Atur elevasi matahari dan parameter atmosfer untuk suasana pagi sampai sore.</p>
+            <span class="lib">Sky</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./06-instancedmesh.html">
+            <span class="num">06</span>
+            <h2>Ribuan Pohon</h2>
+            <p>Bandingkan FPS InstancedMesh dan mesh biasa pada jumlah instance yang sama.</p>
+            <span class="lib">InstancedMesh</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./07-raycaster-label.html">
+            <span class="num">07</span>
+            <h2>Klik Objek &amp; Label</h2>
+            <p>Arahkan kursor, klik objek pada bundaran, dan baca panel informasi yang muncul.</p>
+            <span class="lib">Raycaster + CSS2DRenderer</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./08-tabrakan.html">
+            <span class="num">08</span>
+            <h2>Tabrakan Saat Berjalan</h2>
+            <p>Uji Box3 dan three-mesh-bvh agar kamera tidak menembus tugu dan ornamen.</p>
+            <span class="lib">Box3 + three-mesh-bvh</span>
+          </a>
+        </li>
+        <li>
+          <a class="demo-card" href="./09-lilgui-stats.html">
+            <span class="num">09</span>
+            <h2>Panel Debug &amp; FPS</h2>
+            <p>Ubah warna, cahaya, kamera, dan kecepatan putar lewat lil-gui; pantau FPS.</p>
+            <span class="lib">lil-gui + stats.js</span>
+          </a>
+        </li>
+      </ul>
+
+      <footer class="index-footer">
+        Jalankan <code>npm run dev</code> lalu buka <code>http://localhost:5173</code>. Versi
+        library tercatat di <code>README.md</code> dan dapat dicek dengan <code>npm ls three</code>.
+      </footer>
+    </main>
+  </body>
+</html>
